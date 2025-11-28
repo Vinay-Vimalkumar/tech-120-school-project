@@ -1,0 +1,17 @@
+{
+  "name": "CyberGuardian",
+  "short_name": "CyberGuardian",
+  "description": "Your friendly cybersecurity companion for staying safe online",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAFAFA",
+  "theme_color": "#2E7D32",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

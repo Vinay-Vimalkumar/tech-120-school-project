@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CyberGuardian - Customize your experience with themes, font sizes, colors, and notification preferences.">
+    <meta name="keywords" content="settings, customization, accessibility, preferences">
+    <meta name="author" content="CyberGuardian">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="CyberGuardian - Settings">
+    <meta property="og:description" content="Customize your CyberGuardian experience.">
+    
+    <!-- Favicon & PWA -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2E7D32">
+    
+    <title>CyberGuardian - Settings</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-brand" aria-label="CyberGuardian Home">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    <path d="M9 12l2 2 4-4"/>
+                </svg>
+                <span>CyberGuardian</span>
+            </a>
+            
+            <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"/>
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <line x1="3" y1="18" x2="21" y2="18"/>
+                </svg>
+            </button>
+            
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="updates.html" class="nav-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"/><path d="M16 16h5v5"/></svg>
+                        Updates
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="email-security.html" class="nav-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        Email Security
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="quiz.html" class="nav-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                        Security Quiz
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="settings.html" class="nav-link active">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                        Settings
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Page Header -->
+        <header class="page-header">
+            <h1>
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                Settings
+            </h1>
+            <p>Customize CyberGuardian to work best for you. Adjust colors, text size, and how often you want security checks.</p>
+        </header>
+
+        <!-- Appearance Settings -->
+        <div class="card">
+            <div class="card-header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                <h2>Appearance</h2>
+            </div>
+            <div class="card-body">
+                <div class="settings-section">
+                    <h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                        Theme
+                    </h3>
+                    <div class="form-group">
+                        <label for="theme-select" class="form-label">Choose your preferred theme:</label>
+                        <select id="theme-select" class="form-select">
+                            <option value="light">☀️ Light Mode - Best for daytime use</option>
+                            <option value="dark">🌙 Dark Mode - Easier on the eyes at night</option>
+                            <option value="high-contrast">🔲 High Contrast - Maximum readability</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="settings-section">
+                    <h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 7 4 4 20 4 20 7"/><line x1="9" y1="20" x2="15" y2="20"/><line x1="12" y1="4" x2="12" y2="20"/></svg>
+                        Text Size
+                    </h3>
+                    <div class="form-group">
+                        <label for="font-size-select" class="form-label">Choose a comfortable text size:</label>
+                        <select id="font-size-select" class="form-select">
+                            <option value="small">Small - More content fits on screen</option>
+                            <option value="medium">Medium - Default size (Recommended)</option>
+                            <option value="large">Large - Easier to read</option>
+                            <option value="extra-large">Extra Large - Best for visibility</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="settings-section">
+                    <h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+                        Color Theme
+                    </h3>
+                    <p style="margin-bottom: 1rem; color: var(--text-secondary);">Choose a color that you like:</p>
+                    <div class="color-options">
+                        <button class="color-option green selected" data-color="green" aria-label="Green theme" tabindex="0"></button>
+                        <button class="color-option blue" data-color="blue" aria-label="Blue theme" tabindex="0"></button>
+                        <button class="color-option purple" data-color="purple" aria-label="Purple theme" tabindex="0"></button>
+                        <button class="color-option orange" data-color="orange" aria-label="Orange theme" tabindex="0"></button>
+                        <button class="color-option red" data-color="red" aria-label="Red theme" tabindex="0"></button>
+                        <button class="color-option teal" data-color="teal" aria-label="Teal theme" tabindex="0"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Language Settings -->
+        <div class="card">
+            <div class="card-header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                <h2>Language</h2>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="language-select" class="form-label">Choose your language:</label>
+                    <select id="language-select" class="form-select">
+                        <option value="en">🇺🇸 English</option>
+                        <option value="es">🇪🇸 Español (Spanish)</option>
+                        <option value="fr">🇫🇷 Français (French)</option>
+                        <option value="de">🇩🇪 Deutsch (German)</option>
+                        <option value="it">🇮🇹 Italiano (Italian)</option>
+                        <option value="pt">🇵🇹 Português (Portuguese)</option>
+                        <option value="zh">🇨🇳 中文 (Chinese)</option>
+                        <option value="ja">🇯🇵 日本語 (Japanese)</option>
+                        <option value="ko">🇰🇷 한국어 (Korean)</option>
+                    </select>
+                    <p style="margin-top: 0.75rem; color: var(--text-secondary); font-size: 0.95rem;">
+                        <em>Note: Language changes will take effect after reloading the page.</em>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Notification Settings -->
+        <div class="card">
+            <div class="card-header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+                <h2>Notifications & Alerts</h2>
+            </div>
+            <div class="card-body">
+                <div class="settings-grid">
+                    <div class="settings-option">
+                        <div>
+                            <span class="settings-option-label">Enable Notifications</span>
+                            <p style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 0.25rem;">Get alerts about important security updates</p>
+                        </div>
+                        <label class="toggle">
+                            <input type="checkbox" id="notifications-toggle" checked>
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+                    
+                    <div class="settings-option">
+                        <div>
+                            <span class="settings-option-label">Sound Effects</span>
+                            <p style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 0.25rem;">Play sounds for alerts and notifications</p>
+                        </div>
+                        <label class="toggle">
+                            <input type="checkbox" id="sounds-toggle" checked>
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Security Check Settings -->
+        <div class="card">
+            <div class="card-header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"/><path d="M16 16h5v5"/></svg>
+                <h2>Security Check Schedule</h2>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="update-frequency" class="form-label">How often should we check for updates?</label>
+                    <select id="update-frequency" class="form-select">
+                        <option value="realtime">🔴 Real-time - Check continuously (Uses more resources)</option>
+                        <option value="hourly">⏰ Every Hour - Frequent checks</option>
+                        <option value="daily">📅 Once Daily - Recommended for most users</option>
+                        <option value="weekly">📆 Once Weekly - Check every week</option>
+                        <option value="manual">🖐️ Manual Only - I'll check myself</option>
+                    </select>
+                </div>
+                
+                <div class="settings-grid mt-3">
+                    <div class="settings-option">
+                        <div>
+                            <span class="settings-option-label">Auto-Scan Emails</span>
+                            <p style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 0.25rem;">Automatically scan for phishing when Gmail is connected</p>
+                        </div>
+                        <label class="toggle">
+                            <input type="checkbox" id="auto-scan-toggle">
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Data & Privacy -->
+        <div class="card">
+            <div class="card-header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                <h2>Data & Privacy</h2>
+            </div>
+            <div class="card-body">
+                <div style="background: #E8F5E9; padding: 1.5rem; border-radius: var(--border-radius); margin-bottom: 1.5rem;">
+                    <h3 style="color: var(--success-color); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        Your Privacy Matters
+                    </h3>
+                    <p style="color: var(--text-secondary);">
+                        CyberGuardian stores your preferences locally on your device. We don't collect or share your personal data with anyone. Your security is our priority.
+                    </p>
+                </div>
+                
+                <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+                    <button id="export-settings-btn" class="btn btn-outline">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                        Export Settings
+                    </button>
+                    <button id="reset-settings-btn" class="btn btn-danger">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"/><path d="M16 16h5v5"/></svg>
+                        Reset to Default
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Help Section -->
+        <div class="card">
+            <div class="card-header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                <h2>Need Help?</h2>
+            </div>
+            <div class="card-body">
+                <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">
+                    If you have questions about using CyberGuardian or need assistance, here are some resources:
+                </p>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+                    <a href="index.html" style="text-decoration: none;">
+                        <div style="padding: 1.5rem; background: var(--background-color); border-radius: var(--border-radius); border: 2px solid var(--border-color); transition: all 0.3s;">
+                            <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">📖 Getting Started Guide</h3>
+                            <p style="color: var(--text-secondary);">Learn the basics of CyberGuardian</p>
+                        </div>
+                    </a>
+                    <a href="quiz.html" style="text-decoration: none;">
+                        <div style="padding: 1.5rem; background: var(--background-color); border-radius: var(--border-radius); border: 2px solid var(--border-color); transition: all 0.3s;">
+                            <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">🎓 Security Education</h3>
+                            <p style="color: var(--text-secondary);">Take quizzes to learn more about cybersecurity</p>
+                        </div>
+                    </a>
+                    <div style="padding: 1.5rem; background: var(--background-color); border-radius: var(--border-radius); border: 2px solid var(--border-color);">
+                        <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">📧 Contact Support</h3>
+                        <p style="color: var(--text-secondary);">Email us at support@cyberguardian.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>CyberGuardian — Keeping you safe online, one step at a time.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/settings.js"></script>
+</body>
+</html>

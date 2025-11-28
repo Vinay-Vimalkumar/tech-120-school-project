@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CyberGuardian - Scan your Gmail for phishing emails. Learn to identify scams and protect yourself from email fraud.">
+    <meta name="keywords" content="phishing emails, email security, scam detection, gmail security">
+    <meta name="author" content="CyberGuardian">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="CyberGuardian - Email Security">
+    <meta property="og:description" content="Scan your Gmail for phishing emails and stay protected.">
+    
+    <!-- Favicon & PWA -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2E7D32">
+    
+    <title>CyberGuardian - Email Security</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-brand" aria-label="CyberGuardian Home">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    <path d="M9 12l2 2 4-4"/>
+                </svg>
+                <span>CyberGuardian</span>
+            </a>
+            
+            <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"/>
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <line x1="3" y1="18" x2="21" y2="18"/>
+                </svg>
+            </button>
+            
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="updates.html" class="nav-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"/><path d="M16 16h5v5"/></svg>
+                        Updates
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="email-security.html" class="nav-link active">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        Email Security
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="quiz.html" class="nav-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                        Security Quiz
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="settings.html" class="nav-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                        Settings
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Page Header -->
+        <header class="page-header">
+            <h1>
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                Email Security
+            </h1>
+            <p>Connect your Gmail account and we'll scan for phishing emails trying to trick you. We explain exactly why an email looks suspicious.</p>
+        </header>
+
+        <!-- Connection Status -->
+        <div id="connection-status" class="connection-status disconnected">
+            <div class="status-indicator"></div>
+            <span><strong>Not Connected</strong> - Connect your Gmail to scan for phishing emails</span>
+        </div>
+
+        <!-- Connection Section -->
+        <div class="card">
+            <div class="card-header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                <h2>Connect Your Email</h2>
+            </div>
+            <div class="card-body">
+                <p style="margin-bottom: 1.5rem; font-size: 1.1rem;">
+                    To scan for phishing emails, we need to connect to your Gmail account. We use Google's secure authentication — we never see or store your password.
+                </p>
+                
+                <div style="background: #E3F2FD; padding: 1.5rem; border-radius: var(--border-radius); margin-bottom: 1.5rem;">
+                    <h3 style="color: var(--secondary-color); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        Your Privacy is Protected
+                    </h3>
+                    <ul style="margin-left: 1.5rem; color: var(--text-secondary);">
+                        <li>We only read email headers (sender, subject) — not your personal messages</li>
+                        <li>Your data is never shared with third parties</li>
+                        <li>You can disconnect at any time</li>
+                    </ul>
+                </div>
+
+                <div class="text-center">
+                    <button id="connect-gmail-btn" class="btn btn-secondary btn-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        Connect Gmail Account
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scan Section -->
+        <div class="card">
+            <div class="card-header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <h2>Scan for Phishing Emails</h2>
+            </div>
+            <div class="card-body">
+                <p style="margin-bottom: 1.5rem; font-size: 1.1rem;">
+                    Once connected, click the button below to scan your recent emails for potential phishing attempts. We'll analyze each email and tell you exactly why it might be suspicious.
+                </p>
+
+                <div class="text-center">
+                    <button id="scan-emails-btn" class="btn btn-primary btn-lg" disabled>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                        Scan for Phishing Emails
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scanning Animation -->
+        <div id="scan-animation" class="scan-animation">
+            <div class="scanner"></div>
+            <p>Analyzing your emails for suspicious patterns...</p>
+            <p style="font-size: 1rem; color: var(--text-secondary); margin-top: 0.5rem;">This may take a moment</p>
+        </div>
+
+        <!-- Results Section (hidden until scan complete) -->
+        <section id="results-section" style="display: none;" aria-labelledby="results-title">
+            <!-- Stats -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">7</div>
+                    <div class="stat-label">Emails Scanned</div>
+                </div>
+                <div class="stat-card" style="border-top: 4px solid var(--danger-color);">
+                    <div class="stat-number" style="color: var(--danger-color);">5</div>
+                    <div class="stat-label">Phishing Detected</div>
+                </div>
+                <div class="stat-card" style="border-top: 4px solid var(--success-color);">
+                    <div class="stat-number" style="color: var(--success-color);">2</div>
+                    <div class="stat-label">Safe Emails</div>
+                </div>
+            </div>
+
+            <h2 id="results-title" class="mb-3" style="font-size: 1.5rem;">Scan Results</h2>
+            <div id="email-list" class="email-list">
+                <!-- Email results will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- What is Phishing Section -->
+        <div class="card mt-4">
+            <div class="card-header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                <h2>What is Phishing?</h2>
+            </div>
+            <div class="card-body">
+                <p style="font-size: 1.15rem; margin-bottom: 1.5rem;">
+                    <strong>Phishing</strong> is when criminals send fake emails pretending to be from trusted companies (like your bank, Amazon, or Netflix) to trick you into giving them your personal information, passwords, or money.
+                </p>
+                
+                <h3 style="font-size: 1.2rem; margin-bottom: 1rem;">Common Signs of Phishing Emails:</h3>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem;">
+                    <div style="padding: 1rem; background: #FFEBEE; border-radius: var(--border-radius); border-left: 4px solid var(--danger-color);">
+                        <strong style="color: var(--danger-color);">🚨 Urgent or Scary Language</strong>
+                        <p style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 0.5rem;">"Your account will be closed immediately!" or "Suspicious activity detected!"</p>
+                    </div>
+                    <div style="padding: 1rem; background: #FFEBEE; border-radius: var(--border-radius); border-left: 4px solid var(--danger-color);">
+                        <strong style="color: var(--danger-color);">🔗 Suspicious Links</strong>
+                        <p style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 0.5rem;">Links that don't go to the official website (hover over links to check before clicking)</p>
+                    </div>
+                    <div style="padding: 1rem; background: #FFEBEE; border-radius: var(--border-radius); border-left: 4px solid var(--danger-color);">
+                        <strong style="color: var(--danger-color);">📧 Strange Sender Address</strong>
+                        <p style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 0.5rem;">Emails from "amaz0n.com" or "paypa1.com" (notice the tricks in the spelling)</p>
+                    </div>
+                    <div style="padding: 1rem; background: #FFEBEE; border-radius: var(--border-radius); border-left: 4px solid var(--danger-color);">
+                        <strong style="color: var(--danger-color);">👤 Generic Greetings</strong>
+                        <p style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 0.5rem;">"Dear Customer" instead of your actual name</p>
+                    </div>
+                    <div style="padding: 1rem; background: #FFEBEE; border-radius: var(--border-radius); border-left: 4px solid var(--danger-color);">
+                        <strong style="color: var(--danger-color);">💰 Too Good to Be True</strong>
+                        <p style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 0.5rem;">"You've won $1,000,000!" or "Free gift card"</p>
+                    </div>
+                    <div style="padding: 1rem; background: #FFEBEE; border-radius: var(--border-radius); border-left: 4px solid var(--danger-color);">
+                        <strong style="color: var(--danger-color);">📝 Requests for Personal Info</strong>
+                        <p style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 0.5rem;">Asking for passwords, Social Security numbers, or bank details via email</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- What To Do Section -->
+        <div class="card">
+            <div class="card-header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <h2>What To Do If You Receive a Suspicious Email</h2>
+            </div>
+            <div class="card-body">
+                <ol style="padding-left: 1.5rem; font-size: 1.1rem;">
+                    <li style="margin-bottom: 1rem; padding-left: 0.5rem;">
+                        <strong>Don't click any links</strong> in the email
+                    </li>
+                    <li style="margin-bottom: 1rem; padding-left: 0.5rem;">
+                        <strong>Don't download attachments</strong> or open files
+                    </li>
+                    <li style="margin-bottom: 1rem; padding-left: 0.5rem;">
+                        <strong>Don't reply</strong> or provide any information
+                    </li>
+                    <li style="margin-bottom: 1rem; padding-left: 0.5rem;">
+                        <strong>Contact the company directly</strong> using the phone number on your card or their official website (type it yourself, don't use links from the email)
+                    </li>
+                    <li style="padding-left: 0.5rem;">
+                        <strong>Report the email as spam</strong> in your email program, then delete it
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>CyberGuardian — Keeping you safe online, one step at a time.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/email.js"></script>
+</body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CyberGuardian - Your friendly cybersecurity companion. Check for updates, scan for phishing emails, and learn to stay safe online.">
+    <meta name="keywords" content="cybersecurity, phishing, software updates, online safety, security quiz">
+    <meta name="author" content="CyberGuardian">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="CyberGuardian - Stay Safe Online">
+    <meta property="og:description" content="Your friendly cybersecurity companion. Check for updates, scan for phishing emails, and learn to protect yourself online.">
+    <meta property="og:image" content="favicon.svg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="CyberGuardian - Stay Safe Online">
+    <meta name="twitter:description" content="Your friendly cybersecurity companion for staying safe online.">
+    
+    <!-- Favicon & PWA -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2E7D32">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="CyberGuardian">
+    
+    <title>CyberGuardian - Stay Safe Online</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-brand" aria-label="CyberGuardian Home">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    <path d="M9 12l2 2 4-4"/>
+                </svg>
+                <span>CyberGuardian</span>
+            </a>
+            
+            <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"/>
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <line x1="3" y1="18" x2="21" y2="18"/>
+                </svg>
+            </button>
+            
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="updates.html" class="nav-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"/><path d="M16 16h5v5"/></svg>
+                        Updates
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="email-security.html" class="nav-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        Email Security
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="quiz.html" class="nav-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                        Security Quiz
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="settings.html" class="nav-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                        Settings
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero" aria-labelledby="hero-title">
+            <h1 id="hero-title">Welcome to CyberGuardian</h1>
+            <p>Your friendly companion for staying safe online. We help you keep your computer updated, protect your email from scams, and learn about cybersecurity — all in a simple, easy-to-understand way.</p>
+            <a href="updates.html" class="btn btn-lg" style="background: white; color: var(--primary-color);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                Get Started
+            </a>
+        </section>
+
+        <!-- Features Section -->
+        <section aria-labelledby="features-title">
+            <div class="page-header">
+                <h2 id="features-title" style="font-size: 2rem; color: var(--text-primary);">What Can CyberGuardian Do For You?</h2>
+                <p>Simple tools to keep you safe online</p>
+            </div>
+
+            <div class="features-grid">
+                <!-- Feature 1: Updates -->
+                <article class="feature-card">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"/><path d="M16 16h5v5"/></svg>
+                    </div>
+                    <h3>Software Updates</h3>
+                    <p>We check your computer for important updates and tell you which ones are critical for your security. No confusing tech talk — just clear, simple explanations.</p>
+                    <a href="updates.html" class="btn btn-primary mt-3">
+                        Check for Updates
+                    </a>
+                </article>
+
+                <!-- Feature 2: Email Security -->
+                <article class="feature-card">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    </div>
+                    <h3>Email Protection</h3>
+                    <p>Connect your Gmail and we'll scan for suspicious emails trying to trick you. We explain exactly why an email looks fishy so you can stay safe.</p>
+                    <a href="email-security.html" class="btn btn-primary mt-3">
+                        Scan Emails
+                    </a>
+                </article>
+
+                <!-- Feature 3: Quiz -->
+                <article class="feature-card">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                    </div>
+                    <h3>Learn With Quizzes</h3>
+                    <p>Take fun quizzes about real cyberattacks and scams. Learn from history to protect yourself today. Knowledge is your best defense!</p>
+                    <a href="quiz.html" class="btn btn-primary mt-3">
+                        Take the Quiz
+                    </a>
+                </article>
+
+                <!-- Feature 4: Customization -->
+                <article class="feature-card">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                    </div>
+                    <h3>Your Preferences</h3>
+                    <p>Make CyberGuardian work for you. Adjust text size, colors, and how often you want security checks. Everything designed for your comfort.</p>
+                    <a href="settings.html" class="btn btn-primary mt-3">
+                        Customize
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Why Updates Matter Section -->
+        <section class="card mt-4" aria-labelledby="why-updates-title">
+            <div class="card-header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                <h2 id="why-updates-title">Why Does This Matter?</h2>
+            </div>
+            <div class="card-body">
+                <p style="font-size: 1.15rem; margin-bottom: 1.5rem;">
+                    Every year, millions of people fall victim to cyber attacks that could have been prevented with simple steps. Here's why staying protected matters:
+                </p>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">85%</div>
+                        <div class="stat-label">of breaches involve human error</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">3.4B</div>
+                        <div class="stat-label">phishing emails sent daily</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">60%</div>
+                        <div class="stat-label">of breaches from unpatched software</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">$4.5M</div>
+                        <div class="stat-label">average cost of a data breach</div>
+                    </div>
+                </div>
+                <p style="font-size: 1.15rem; margin-top: 1.5rem; color: var(--text-secondary);">
+                    The good news? Most attacks are preventable with basic security practices — and that's exactly what CyberGuardian helps you with.
+                </p>
+            </div>
+        </section>
+
+        <!-- Quick Tips Section -->
+        <section class="card" aria-labelledby="tips-title">
+            <div class="card-header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+                <h2 id="tips-title">Quick Safety Tips</h2>
+            </div>
+            <div class="card-body">
+                <ul style="list-style: none; padding: 0;">
+                    <li style="padding: 1rem 0; border-bottom: 1px solid var(--border-color); display: flex; gap: 1rem; align-items: flex-start;">
+                        <span class="badge badge-critical">1</span>
+                        <div>
+                            <strong>Keep Everything Updated</strong><br>
+                            <span style="color: var(--text-secondary);">Updates often fix security holes that hackers can exploit. When you see an update notification, install it soon!</span>
+                        </div>
+                    </li>
+                    <li style="padding: 1rem 0; border-bottom: 1px solid var(--border-color); display: flex; gap: 1rem; align-items: flex-start;">
+                        <span class="badge badge-important">2</span>
+                        <div>
+                            <strong>Think Before You Click</strong><br>
+                            <span style="color: var(--text-secondary);">Be suspicious of emails asking you to click links or provide personal information, even if they look official.</span>
+                        </div>
+                    </li>
+                    <li style="padding: 1rem 0; border-bottom: 1px solid var(--border-color); display: flex; gap: 1rem; align-items: flex-start;">
+                        <span class="badge badge-optional">3</span>
+                        <div>
+                            <strong>Use Strong Passwords</strong><br>
+                            <span style="color: var(--text-secondary);">Create long, unique passwords for each account. Consider using a password manager to keep track of them.</span>
+                        </div>
+                    </li>
+                    <li style="padding: 1rem 0; display: flex; gap: 1rem; align-items: flex-start;">
+                        <span class="badge badge-safe">4</span>
+                        <div>
+                            <strong>When in Doubt, Verify</strong><br>
+                            <span style="color: var(--text-secondary);">If something seems suspicious, contact the company directly using their official phone number or website — not the one in the email.</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>CyberGuardian — Keeping you safe online, one step at a time.</p>
+        <p style="font-size: 0.9rem; margin-top: 0.5rem; opacity: 0.7;">100% Client-Side • Your data never leaves your device</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
